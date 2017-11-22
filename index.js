@@ -13,6 +13,14 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value)
   return object
 }
 //deletes `key` from a clone of object and returns the new object (it is non-destructive)
+function deleteFromObjectByKey(object, key) {
+  const newObj = Object.assign({}, object)
+
+  delete newObj[key]
+
+  return newObj
+}
+//returns object without the delete key/value pair
 function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
 
