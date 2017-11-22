@@ -16,6 +16,4 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value)
 destructivelyDeleteFromObjectByKey(object, key)
 {
   delete object[key]
-
-  return object
 }
